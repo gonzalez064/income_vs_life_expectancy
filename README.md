@@ -32,8 +32,11 @@ pip install -r requirements.txt
 ```
 
 ## Quick start
+```bash
 python main_multi_year.py   # prints r & p by year, saves plots/
 pytest                      # run unit tests
+…
+```
 
 ## Data
 -Life expectancy: INE – “Esperanza de vida a los 65 años”.
