@@ -28,6 +28,8 @@ git clone https://github.com/gonzalez064/income_vs_life_expectancy.git
 cd correlations-analysis
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+…
+```
 
 ## Quick start
 python main_multi_year.py   # prints r & p by year, saves plots/
@@ -43,9 +45,9 @@ European decimals).
 
 ## Results (2015-2022)
 
-* **Pearson r ≈ 0.59**, *p* < 0.001 → a moderately strong positive correlation overall.  
+* **Pearson r ≈ 0.47**, *p* < 0.001 → a moderately strong positive correlation overall.  
 * Year-by-year the pattern is fairly stable **except for 2020**: the COVID-19
   pandemic distorted both mortality and economic activity, pulling the
-  grand-mean correlation down (excluding 2020, r ≈ 0.63).  
+  grand-mean correlation down (excluding 2020, r ≈ 0.6).  
 * Full annual coefficients are printed to the console, and the corresponding
   scatter plots are saved in `plots/scatter_YYYY.png`.
