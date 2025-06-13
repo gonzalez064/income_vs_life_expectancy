@@ -41,8 +41,8 @@ pytest                      # run unit tests
 ```
 
 ## Data
--Life expectancy: INE – “Esperanza de vida a los 65 años”.
--Income: AEAT-INE – “Renta bruta media por persona”.
+* Life expectancy: INE – “Esperanza de vida a los 65 años”.
+* Income: AEAT-INE – “Renta bruta media por persona”.
 Both datasets are public domain (Spanish Government open data portal).
 
 Files are provided in data/ for convenience (CSV, ; separator,
