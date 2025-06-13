@@ -29,4 +29,23 @@ cd correlations-analysis
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
+## Quick start
+python main_multi_year.py   # prints r & p by year, saves plots/
+pytest                      # run unit tests
 
+## Data
+-Life expectancy: INE – “Esperanza de vida a los 65 años”.
+-Income: AEAT-INE – “Renta bruta media por persona”.
+Both datasets are public domain (Spanish Government open data portal).
+
+Files are provided in data/ for convenience (CSV, ; separator,
+European decimals).
+
+## Results (2015-2022)
+
+* **Pearson r ≈ 0.59**, *p* < 0.001 → a moderately strong positive correlation overall.  
+* Year-by-year the pattern is fairly stable **except for 2020**: the COVID-19
+  pandemic distorted both mortality and economic activity, pulling the
+  grand-mean correlation down (excluding 2020, r ≈ 0.63).  
+* Full annual coefficients are printed to the console, and the corresponding
+  scatter plots are saved in `plots/scatter_YYYY.png`.
